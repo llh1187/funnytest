@@ -1,0 +1,4 @@
+<!--pages/bookDetail/bookDetail.wxml-->
+<text>{{book.showapi_res_body.data.title}}</text>
+<van-button type="warning" bind:click="update">更新数据</van-button>
+<van-button type="danger" bind:click="delete">删除数据</van-button>

@@ -1,0 +1,10 @@
+<view wx:for="{{book_list}}">
+  <van-card price="{{item.showapi_res_body.data.price}}" desc="{{item.showapi_res_body.data.author}}" title="{{item.showapi_res_body.data.title}}" thumb="{{item.showapi_res_body.data.img}}">
+    <view slot="tags">
+      <van-tag type="primary">{{item.showapi_res_body.data.publisher}}</van-tag>
+    </view>
+    <view slot="footer">
+      <van-button size="small" data-id="{{item._id}}" plain type="primary" bind:click="viewItem">查看详情</van-button>
+    </view>
+  </van-card>
+</view>
